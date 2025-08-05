@@ -1,6 +1,6 @@
 <h1>🐍 Python Basics</h1>
 
-<img src="[https://via.placeholder.com/1000x300.png?text=Python+Basics+Learning+Series" alt="Python Basics Banner](http://en.wikipedia.org/wiki/Python_%28programming_language%29#/media/File:Python-logo-notext.svg)" />
+<img src="https://raspberry-valley.azurewebsites.net/img/Python-01.jpg" />
 
 <h2>📅 Day 1 - History of Programming Languages</h2>
 
