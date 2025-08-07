@@ -173,6 +173,186 @@
   <li><b>str</b>: Text/String (e.g., 'Python', "123")</li>
 </ul>
 
+<h2>📦 Variables in Python</h2>
+
+<h3>🔹 What is a Variable?</h3>
+<p>A <b>variable</b> is a container that stores data in RAM (memory). It holds values that can change during program execution.</p>
+
+<h3>🔹 Example:</h3>
+<pre><code>a = 122
+print(a)</code></pre>
+<p><b>Output:</b> 122</p>
+
+<h3>🧠 Understanding Variables:</h3>
+<ul>
+  <li>Once assigned (e.g., <code>a = 122</code>), Python stores the value in memory.</li>
+  <li>You can access it later just by calling <code>print(a)</code>.</li>
+</ul>
+
+<h3>⚠ Rules for Naming Variables:</h3>
+<ol>
+  <li>Cannot start with a number (e.g., <code>100 = 50</code> is invalid).</li>
+  <li>Cannot use spaces. Use underscores instead (e.g., <code>sai_kumar = 33</code>).</li>
+  <li>Are <b>case sensitive</b> (<code>City</code> ≠ <code>CITY</code>).</li>
+  <li>Cannot use special characters like <code>!@#$%^&*</code>.</li>
+</ol>
+
+<h3>✅ Examples:</h3>
+<pre><code># Valid
+a = 10
+user_name = "Ajay"
+City = "Delhi"
+
+# Invalid
+100a = 20
+user name = "Ajay"
+%val = 40
+</code></pre>
+
+<hr/>
+
+<h2>➕ Operators</h2>
+<p>Operators perform operations on variables and values.</p>
+
+<h3>🔹 Example:</h3>
+<pre><code>a = 122
+print(a + 10)</code></pre>
+<p><b>Output:</b> 132</p>
+
+<hr/>
+
+<h2>💾 Memory & Data Types</h2>
+
+<h3>🧠 How Python Stores Data</h3>
+<ul>
+  <li><code>int</code>: Takes 4 bytes (32 bits)</li>
+  <li><code>str</code>: Each character takes 1 byte</li>
+</ul>
+
+<h3>🔹 Check Type and Memory Address</h3>
+<pre><code>p = 457
+print(p)
+print(type(p))
+print(id(p))</code></pre>
+
+<p><b>Output:</b></p>
+<pre>457
+&lt;class 'int'&gt;
+13583317590720</pre>
+
+<h3>ℹ Variable Updates Change Memory Address:</h3>
+<pre><code>a = 10
+print(id(a))
+
+a = 50
+print(id(a))</code></pre>
+
+<p>Each new assignment creates a new memory reference.</p>
+
+<hr/>
+
+<h2>🔄 Type Conversion</h2>
+
+<h3>🔹 Converting Types</h3>
+<pre><code>a = 12
+print(a)
+print(type(a))
+
+b = float(a)
+print(b)
+print(type(b))</code></pre>
+
+<p><b>Output:</b></p>
+<pre>12
+&lt;class 'int'&gt;
+12.0
+&lt;class 'float'&gt;</pre>
+
+<h3>⚠ Invalid Conversion:</h3>
+<pre><code>a = "data"
+b = int(a)  # ❌ Error</code></pre>
+<p><b>Reason:</b> Strings must be numeric to convert to <code>int</code> or <code>float</code>.</p>
+
+<h3>✅ Valid String Conversion:</h3>
+<pre><code>a = "56"
+b = int(a)
+print(b)</code></pre>
+
+<hr/>
+
+<h2>🖨 Print Conditions</h2>
+
+<h3>🗣 Different Ways to Use <code>print()</code></h3>
+
+<h4>Type 1: Using Commas (adds space automatically)</h4>
+<pre><code>name = "Ajay"
+age = 27
+print("My name is", name, "and my age is", age)</code></pre>
+
+<h4>Type 2: Using <code>+</code> (only works with same data type)</h4>
+<pre><code>print("My age is " + str(age))</code></pre>
+
+<h4>Type 3: Using Formatting with <code>%</code></h4>
+<pre><code>print("My age is %d" % age)</code></pre>
+
+<h4>Type 4: Using f-strings (recommended)</h4>
+<pre><code>print(f"My name is {name} and my age is {age}")</code></pre>
+
+<h4>Multi-line Example:</h4>
+<pre><code>country = "Dubai"
+cost = 45.55
+duration = 3
+
+print(f"I'm going to travel to {country} with {cost} dollars for {duration} hours.")</code></pre>
+
+<hr/>
+
+<h2>🔣 Special Print Characters</h2>
+<ul>
+  <li><code>\n</code> - New Line</li>
+  <li><code>\t</code> - Tab Space</li>
+</ul>
+
+<pre><code>print("Jan\nFeb\nMar")
+print("Jan\tFeb\tMar")</code></pre>
+
+<p><b>Output:</b></p>
+<pre>Jan
+Feb
+Mar
+
+Jan    Feb    Mar</pre>
+
+<hr/>
+
+<h2>📚 Built-in Functions & Libraries</h2>
+
+<h3>🔹 What is a Function?</h3>
+<p>A function is a reusable block of code that performs a specific task.</p>
+
+<h3>🔹 Built-in Functions:</h3>
+<ul>
+  <li><code>print()</code></li>
+  <li><code>type()</code></li>
+  <li><code>int()</code>, <code>float()</code></li>
+  <li><code>len()</code></li>
+  <li><code>sum()</code></li>
+</ul>
+
+<h3>🔹 What is a Library?</h3>
+<p>A library is a collection of pre-written code (modules) that you can use in your program.</p>
+
+<h4>Example: Math Library</h4>
+<pre><code>import math
+
+print(dir(math))       # Lists all functions in math
+print(len(dir(math)))  # Total number of functions
+print(math.factorial(5))</code></pre>
+
+<p><b>Popular Python Libraries:</b> <code>math</code>, <code>random</code>, <code>datetime</code>, <code>os</code>, <code>statistics</code></p>
+
+<hr/>
+
 <h2>📞 Support</h2>
 <p>📧 Email: <a href="mailto:billygrahamkandavalli@gmail.com">billygrahamkandavalli@gmail.com</a></p>
 <p>🔗 LinkedIn: <a href="https://www.linkedin.com/in/billy-graham-kandavalli-328607372" target="_blank">Billy Graham Kandavalli</a></p>
